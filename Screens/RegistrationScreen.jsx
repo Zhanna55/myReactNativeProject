@@ -49,7 +49,7 @@ const RegistrationScreen = () => {
           <View
             style={{
               ...styles.form,
-              paddingBottom: isShowKeyboard ? 0 : 78,
+              paddingBottom: isShowKeyboard ? 0 : 45,
               marginBottom: isShowKeyboard ? -20 : 0,
             }}
           >
@@ -62,7 +62,6 @@ const RegistrationScreen = () => {
                 />
               </View>
             </View>
-
             <Text style={styles.formTitle}>Registration</Text>
             <TextInput
               style={focus.input1 ? styles.inputFocus : styles.input}

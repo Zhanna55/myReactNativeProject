@@ -1,13 +1,6 @@
-import { useState, useCallback } from 'react';
+import { useCallback } from 'react';
 import { StatusBar } from 'expo-status-bar';
-import {
-  StyleSheet,
-  Text,
-  View,
-  ImageBackground,
-  TouchableWithoutFeedback,
-  Keyboard,
-} from 'react-native';
+import { StyleSheet, View } from 'react-native';
 
 import { useFonts } from 'expo-font';
 import * as SplashScreen from 'expo-splash-screen';
@@ -33,15 +26,11 @@ export default function App() {
   }
 
   return (
-    // <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
     <View style={styles.container} onLayout={onLayoutRootView}>
-      {/* <ImageBackground style={styles.image} source={require('./images/bg.jpg')}> */}
-      <RegistrationScreen />
-      {/* <LoginScreen /> */}
-      <StatusBar style={{ color: '#fffff' }} />
-      {/* </ImageBackground> */}
+      {/* <RegistrationScreen /> */}
+      <LoginScreen />
+      <StatusBar style={{ color: '#ffffff' }} />
     </View>
-    // </TouchableWithoutFeedback>
   );
 }
 
@@ -49,11 +38,5 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
-  },
-  image: {
-    flex: 1,
-    resizeMode: 'cover',
-    justifyContent: 'flex-end',
-    // alignItems: 'center',
   },
 });

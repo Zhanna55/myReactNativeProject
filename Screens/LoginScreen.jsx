@@ -46,7 +46,7 @@ const LoginScreen = () => {
           <View
             style={{
               ...styles.form,
-              paddingBottom: isShowKeyboard ? 0 : 144,
+              paddingBottom: isShowKeyboard ? 0 : 111,
               marginBottom: isShowKeyboard ? -20 : 0,
             }}
           >
