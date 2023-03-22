@@ -22,6 +22,7 @@ const initialState = {
 const LoginScreen = () => {
   const { passwordVisibility, rightText, handlePasswordVisibility } =
     useTogglePasswordVisibility();
+
   const [isShowKeyboard, setIsShowKeyboard] = useState(false);
   const [state, setState] = useState(initialState);
   const [focus, setFocus] = useState({
